@@ -28,7 +28,7 @@ int main()
 		printf("Enter address 0x");
 		scanf("%x", &address);
 		
-	    ReadProcessMemory(handle, (PBYTE*)address, &value_old, sizeof(value_old), 0);
+	        ReadProcessMemory(handle, (PBYTE*)address, &value_old, sizeof(value_old), 0);
 		
 		printf("Current value: %d\n", value_old);
 		printf("Enter new value: ");
