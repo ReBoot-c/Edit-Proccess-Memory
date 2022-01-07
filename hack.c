@@ -18,7 +18,7 @@ int main()
 	}
 	
 	printf("PID: %d\n", pid);
-	HANDLE handle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, pid);
+	HANDLE handle = OpenProcess(PROCESS_VM_READ | PROCESS_VM_WRITE, FALSE, pid);
 	
 	if (handle)
 	{
